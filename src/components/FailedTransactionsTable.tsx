@@ -16,6 +16,7 @@ type Transaction = {
   phone: string;
   gender: string;
   bvn: string;
+  reason?: string;
   timestamp: string;
   isModified?: boolean;
 }
@@ -42,6 +43,7 @@ export function FailedTransactionsTable({
               <TableHead>Phone</TableHead>
               <TableHead>Gender</TableHead>
               <TableHead>BVN</TableHead>
+              <TableHead>Reason</TableHead>
               <TableHead>Timestamp</TableHead>
               <TableHead className="sticky right-0 bg-background">Action</TableHead>
             </TableRow>
@@ -61,6 +63,7 @@ export function FailedTransactionsTable({
                   <TableCell>{transaction.phone || 'N/A'}</TableCell>
                   <TableCell>{transaction.gender || 'N/A'}</TableCell>
                   <TableCell>{transaction.bvn || 'N/A'}</TableCell>
+                  <TableCell>{transaction.reason || 'N/A'}</TableCell>
                   <TableCell>{new Date(transaction.timestamp).toLocaleString()}</TableCell>
                   <TableCell className="sticky right-0 bg-background">
                     <Button 
