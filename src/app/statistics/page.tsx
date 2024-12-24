@@ -1,11 +1,11 @@
-import { FailedTransactionsDashboard } from '@/components/FailedTransactionsDashboard'
+import { StatisticsDashboard } from '@/components/StatisticsDashboard'
 import { DashboardHeader } from '@/components/DashboardHeader'
 
-export default function Home() {
+export default function StatisticsPage() {
   return (
     <main className="container mx-auto p-4">
       <DashboardHeader />
-      <FailedTransactionsDashboard />
+      <StatisticsDashboard />
     </main>
   )
-}
+} 

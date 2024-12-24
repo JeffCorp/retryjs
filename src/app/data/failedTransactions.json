@@ -1,0 +1,31 @@
+[
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "",
+      "phone": "1234567890",
+      "gender": "",
+      "bvn": "",
+      "timestamp": "2023-05-01T10:30:00Z"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "phone": "",
+      "gender": "Female",
+      "bvn": "1234567890",
+      "timestamp": "2023-05-02T14:45:00Z"
+    },
+    {
+      "id": 3,
+      "name": "Bob Johnson",
+      "email": "bob@example.com",
+      "phone": "9876543210",
+      "gender": "",
+      "bvn": "",
+      "timestamp": "2023-05-03T09:15:00Z"
+    }
+  ]
+  
+  
