@@ -15,7 +15,7 @@ type BulkUpdateData = {
   email: string;
   phone: string;
   gender: string;
-  bvn: string;
+  bvn?: string;
 }
 
 type BulkUpdateModalProps = {

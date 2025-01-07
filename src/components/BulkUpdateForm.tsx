@@ -16,7 +16,7 @@ type BulkUpdateData = {
   email: string;
   phone: string;
   gender: string;
-  bvn: string;
+  bvn?: string;
 }
 
 type BulkUpdateFormProps = {
@@ -28,7 +28,7 @@ export function BulkUpdateForm({ onUpdate }: BulkUpdateFormProps) {
     email: '',
     phone: '',
     gender: '',
-    bvn: '',
+    // bvn: '',
   })
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -92,7 +92,7 @@ export function BulkUpdateForm({ onUpdate }: BulkUpdateFormProps) {
             </SelectContent>
           </Select>
         </div>
-        <div className="grid grid-cols-4 items-center gap-4">
+        {/* <div className="grid grid-cols-4 items-center gap-4">
           <Label htmlFor="bulkBVN" className="text-right">
             BVN
           </Label>
@@ -104,7 +104,7 @@ export function BulkUpdateForm({ onUpdate }: BulkUpdateFormProps) {
             placeholder="1234567890"
             className="col-span-3"
           />
-        </div>
+        </div> */}
       </div>
       <div className="flex justify-end">
         <Button type="submit">Apply Updates</Button>

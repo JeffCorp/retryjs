@@ -113,7 +113,7 @@ export function UpdateModal({ isOpen, onClose, transaction, onUpdate }: UpdateMo
                 </SelectContent>
               </Select>
             </div>
-            <div className="grid grid-cols-4 items-center gap-4">
+            {/* <div className="grid grid-cols-4 items-center gap-4">
               <Label htmlFor="bvn" className="text-right">
                 BVN
               </Label>
@@ -124,7 +124,7 @@ export function UpdateModal({ isOpen, onClose, transaction, onUpdate }: UpdateMo
                 onChange={handleInputChange}
                 className="col-span-3"
               />
-            </div>
+            </div> */}
           </div>
           <DialogFooter>
             <Button type="submit">Save changes</Button>

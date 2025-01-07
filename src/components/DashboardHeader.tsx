@@ -13,7 +13,7 @@ export function DashboardHeader() {
   return (
     <div className="flex justify-between items-center mb-4">
       <div>
-        <h1 className="text-2xl font-bold">Failed Transactions Dashboard</h1>
+        <h1 className="text-2xl font-bold">Failed Requests Dashboard</h1>
         <p className="text-sm text-gray-500">Welcome, {user?.name}</p>
       </div>
       <div className="flex items-center gap-4">

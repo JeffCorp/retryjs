@@ -71,7 +71,7 @@ export function FailedTransactionsDashboard() {
     setIsUpdateModalOpen(true)
   }
 
-  const handleBulkUpdate = (bulkData: { email: string; phone: string; gender: string; bvn: string }) => {
+  const handleBulkUpdate = (bulkData: { email: string; phone: string; gender: string; bvn?: string }) => {
     const updatedTransactions = transactions.map(t => {
       const wasEmpty = !t.email || !t.phone || !t.gender || !t.bvn
       const newTransaction = {
@@ -79,7 +79,7 @@ export function FailedTransactionsDashboard() {
         email: t.email || bulkData.email,
         phone: t.phone || bulkData.phone,
         gender: t.gender || bulkData.gender,
-        bvn: t.bvn || bulkData.bvn,
+        // bvn: t.bvn || bulkData.bvn,
       }
       // Mark as modified only if any field was actually updated
       const isModified = wasEmpty && (
