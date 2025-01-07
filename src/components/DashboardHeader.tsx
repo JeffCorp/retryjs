@@ -25,7 +25,7 @@ export function DashboardHeader() {
             <Link href="/statistics">Statistics</Link>
           </Button>
           <Button variant={pathname === "/" ? "default" : "ghost"} asChild>
-            <Link href="/">Transactions</Link>
+            <Link href="/">Requests</Link>
           </Button>
         </nav>
         <LogoutButton />
